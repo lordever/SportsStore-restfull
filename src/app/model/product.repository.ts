@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Product} from './product.model';
 import {StaticDataSource} from './static.datasource';
+import "rxjs/add/operator/filter";
 
 @Injectable()
 export class ProductRepository {

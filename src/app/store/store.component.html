@@ -6,6 +6,9 @@
   <button class="btn btn-block btn-outline-primary" (click)="changeCategory()">
     Home
   </button>
+  <button class="btn btn-block btn-danger m-t-3" routerLink="/admin">
+    Admin
+  </button>
   <button *ngFor="let cat of categories" class="btn btn-outline-primary
 btn-block"
           [class.active]="cat == selectedCategory" (click)="changeCategory(cat)">
