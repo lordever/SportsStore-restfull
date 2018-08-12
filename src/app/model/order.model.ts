@@ -15,7 +15,7 @@ export class Order {
   constructor(public cart: Cart) {
   }
 
-  clear() {
+  public clear() {
     this.id = null;
     this.name = this.address = this.city = null;
     this.state = this.zip = this.country = null;
